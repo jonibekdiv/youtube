@@ -1,0 +1,135 @@
+// Interfeysdagi barcha matnlar shu yerda (o'zbek tilida).
+// Boshqa tilga o'tkazish uchun faqat shu faylni o'zgartirish kifoya.
+export const t = {
+  nav: {
+    mainMenu: 'Asosiy menyu',
+    menu: 'Menyu',
+    home: 'Bosh sahifa',
+    explore: 'Kategoriyalar',
+    subscriptions: 'Obunalar',
+    noSubscriptions: "Obuna bo'lgan kanallaringiz shu yerda ko'rinadi.",
+  },
+  search: {
+    label: 'Qidirish',
+    placeholder: 'Qidirish',
+    empty: 'Hech narsa topilmadi',
+    emptyHint: "Boshqa so'z bilan qidirib ko'ring.",
+  },
+  theme: {
+    toLight: "Yorug' mavzuga o'tish",
+    toDark: "Qorong'i mavzuga o'tish",
+  },
+  categories: {
+    all: 'Hammasi',
+    music: 'Musiqa',
+    gaming: "O'yinlar",
+    sports: 'Sport',
+    news: 'Yangiliklar',
+    education: "Ta'lim",
+    film: 'Kino va animatsiya',
+    comedy: 'Komediya',
+    entertainment: "Ko'ngilochar",
+    tech: 'Fan va texnologiya',
+    travel: 'Sayohat',
+    howto: "Qo'llanmalar",
+    autos: 'Avtomobillar',
+    pets: 'Hayvonlar',
+    emptyHint: "Bu kategoriyada hozircha video topilmadi.",
+  },
+  video: {
+    views: (n) => `${n} ko'rish`,
+    viewsFull: (n) => `${n} ta ko'rish`,
+    live: 'JONLI',
+    like: 'Yoqdi',
+    share: 'Ulashish',
+    copied: 'Havola nusxalandi',
+    showMore: "Ko'proq",
+    showLess: 'Kamroq',
+    related: 'Tavsiya etilgan videolar',
+    notEmbeddable: "Bu videoni boshqa saytlarda ijro etish taqiqlangan.",
+    openOnYouTube: "YouTube'da ochish",
+  },
+  channel: {
+    subscribers: (n) => `${n} obunachi`,
+    videos: (n) => `${n} ta video`,
+    subscribe: "Obuna bo'lish",
+    subscribed: "Obuna bo'lingan",
+    videosTab: 'Videolar',
+    empty: "Bu kanalda hali video yo'q.",
+  },
+  comments: {
+    title: 'Izohlar',
+    count: (n) => `${n} ta izoh`,
+    sortTop: 'Mashhur',
+    sortNew: 'Yangi',
+    disabled: "Bu video uchun izohlar o'chirilgan.",
+    empty: "Hali izohlar yo'q.",
+    showReplies: (n) => `${n} ta javobni ko'rsatish`,
+    hideReplies: 'Javoblarni yashirish',
+  },
+  common: {
+    loadMore: 'Yana yuklash',
+    retry: 'Qayta urinish',
+    close: 'Yopish',
+    backHome: 'Bosh sahifaga qaytish',
+    pageNotFound: 'Sahifa topilmadi',
+  },
+  errors: {
+    quota: {
+      title: 'YouTube API kunlik limiti tugadi',
+      hint: "Limit har kuni yangilanadi (Pacific vaqti bilan yarim tunda). Ertaga qayta urinib ko'ring yoki Google Cloud Console'da limitni oshirishni so'rang.",
+    },
+    key: {
+      title: "API kaliti noto'g'ri yoki topilmadi",
+      hint: ".env faylidagi VITE_YOUTUBE_API_KEY qiymatini tekshiring va dev serverni qayta ishga tushiring.",
+    },
+    notEnabled: {
+      title: 'YouTube Data API v3 yoqilmagan',
+      hint: "Google Cloud Console → APIs & Services → Library bo'limida «YouTube Data API v3» ni yoqing.",
+    },
+    referrer: {
+      title: "Bu sayt uchun kalitga ruxsat berilmagan",
+      hint: "API kalit cheklovlarida (Websites / HTTP referrers) joriy manzilni, masalan http://localhost:5173/* ni qo'shing.",
+    },
+    chartNotFound: {
+      title: "Bu mintaqa uchun trend ro'yxati topilmadi",
+      hint: ".env faylida VITE_REGION_CODE ni o'zgartirib ko'ring (masalan, US).",
+    },
+    notFound: {
+      title: 'Topilmadi',
+      hint: "Video yoki kanal o'chirilgan yoki yopiq bo'lishi mumkin.",
+    },
+    network: {
+      title: "Internet bilan aloqa yo'q",
+      hint: "Ulanishni tekshirib, qayta urinib ko'ring.",
+    },
+    unknown: {
+      title: 'Xatolik yuz berdi',
+      hint: "Birozdan so'ng qayta urinib ko'ring.",
+    },
+  },
+  demo: {
+    banner:
+      "Demo rejim: YouTube API kaliti topilmadi, shuning uchun namunaviy (soxta) videolar ko'rsatilmoqda. Haqiqiy videolar uchun .env faylida VITE_YOUTUBE_API_KEY ni sozlang.",
+    player: "Demo rejim: haqiqiy video faqat API kaliti sozlanganda ijro etiladi.",
+  },
+  legal: {
+    usesApi: 'Ushbu ilova YouTube API xizmatlaridan foydalanadi.',
+    terms: 'YouTube Foydalanish shartlari',
+    privacy: 'Google Maxfiylik siyosati',
+  },
+  units: { thousand: 'ming', million: 'mln', billion: 'mlrd' },
+  justNow: 'hozirgina',
+  ago: {
+    year: (n) => `${n} yil oldin`,
+    month: (n) => `${n} oy oldin`,
+    week: (n) => `${n} hafta oldin`,
+    day: (n) => `${n} kun oldin`,
+    hour: (n) => `${n} soat oldin`,
+    minute: (n) => `${n} daqiqa oldin`,
+  },
+  months: [
+    'yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun',
+    'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr',
+  ],
+};
